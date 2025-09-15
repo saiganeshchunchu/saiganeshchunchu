@@ -11,16 +11,19 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #fdfdfd;
+      background: #f3f4f6;
       color: #222;
       line-height: 1.6;
       scroll-behavior: smooth;
     }
+    /* ===== HEADER ===== */
     header {
+      position: relative;
       text-align: center;
-      padding: 5rem 1rem;
+      padding: 6rem 1rem;
       background: linear-gradient(135deg, #0077ff, #00c4cc);
       color: white;
+      overflow: hidden;
     }
     header h1 {
       font-size: 3rem;
@@ -33,19 +36,37 @@
       animation: fadeUp 1.5s ease;
     }
     nav a {
-      margin: 0 0.5rem;
+      margin: 0 0.8rem;
       color: white;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s;
     }
-    nav a:hover {
-      color: #ffeb3b;
+    nav a:hover { color: #ffeb3b; }
+
+    /* Animated background circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      animation: float 8s infinite ease-in-out;
     }
+    .circle:nth-child(1){width:120px;height:120px;top:10%;left:20%;animation-duration:12s;}
+    .circle:nth-child(2){width:200px;height:200px;top:40%;left:70%;animation-duration:18s;}
+    .circle:nth-child(3){width:150px;height:150px;top:70%;left:10%;animation-duration:20s;}
+    @keyframes float {
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-40px);}
+    }
+
+    /* ===== SECTIONS ===== */
     section {
       max-width: 900px;
-      margin: 4rem auto;
-      padding: 0 1rem;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     h2 {
       font-size: 1.8rem;
@@ -54,33 +75,39 @@
       margin-bottom: 1rem;
     }
     ul { padding-left: 1.2rem; }
+
+    /* ===== FOOTER ===== */
     footer {
       text-align: center;
       padding: 2rem;
-      background: #f1f1f1;
+      background: linear-gradient(135deg, #0077ff, #00c4cc);
+      color: #fff;
       font-size: 0.9rem;
-      color: #555;
     }
-    /* Animations */
+
+    /* ===== Animations ===== */
     @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
     }
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
     <h1>Sai Ganesh Chunchu</h1>
     <p>Software & Data Enthusiast | M.S. Computer Science (UAH)</p>
     <nav>
-      <a href="#about">About</a> |
-      <a href="#education">Education</a> |
-      <a href="#skills">Skills</a> |
-      <a href="#projects">Projects</a> |
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -132,9 +159,8 @@
     © 2025 Sai Ganesh Chunchu
   </footer>
 
+  <!-- Animation script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
