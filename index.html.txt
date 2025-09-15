@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Ganesh Chunchu — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #666;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sai Ganesh Chunchu</h1>
+    <p>Software & Data Enthusiast | M.S. Computer Science (UAH)</p>
+    <nav>
+      <a href="mailto:saiganeshchunchu@gmail.com">Email</a> |
+      <a href="https://github.com/saiganeshchunchu" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/sai-ganesh-chunchu-3885b4207/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am pursuing a Master’s in Computer Science at the University of Alabama in Huntsville (specialization: Data Science). Passionate about AI/ML, cloud computing, and building impactful software solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>University of Alabama in Huntsville</strong> — M.S. Computer Science (Expected Dec 2025)</p>
+    <p><strong>Koneru Lakshmaiah Education Foundation</strong> — B.Tech CSE (May 2023)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Python, JavaScript, C#, SQL Server, MongoDB, HTML, CSS, XML, AWS, RPA Tools</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>AWS Cloud Virtual Internship — AICTE & EduSkills</strong></p>
+    <p><strong>RPA Virtual Internship — AICTE & EduSkills</strong></p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Enterprise Resource Management System</li>
+      <li>E-Care Health Management System</li>
+      <li>Malware Analysis & Detection (ML models)</li>
+    </ul>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Azure Fundamentals (AZ-900)</li>
+      <li>Aviatrix Certified Engineer</li>
+      <li>Microsoft DevOps Solutions (AZ-400)</li>
+      <li>Automation Anywhere RPA Professional</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:saiganeshchunchu@gmail.com">saiganeshchunchu@gmail.com</a></p>
+    <p>Phone: (256) 469-5997</p>
+  </section>
+
+  <footer>
+    © 2025 Sai Ganesh Chunchu
+  </footer>
+</body>
+</html>
