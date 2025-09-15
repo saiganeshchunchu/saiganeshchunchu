@@ -1,6 +1,115 @@
-<div class="project-card" data-aos="zoom-in">
-  <img src="images/project1.png" alt="Project 1" style="width:100%;border-radius:8px;">
-  <h3>Enterprise Resource Management System</h3>
-  <p>Designed core modules (Auth, HR, Inventory, CRM). Built with Spring Boot + MySQL.</p>
-  <a href="https://github.com/saiganeshchunchu/ERP" target="_blank">View on GitHub</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Sai Ganesh Chunchu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f3f4f6;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(135deg, #0077ff, #00c4cc);
+      color: white;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { color: #ffeb3b; }
+
+    .container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .project-card h3 {
+      margin-top: 0.5rem;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background: #0077ff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .project-card a:hover { background: #005fcc; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f2937;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <p>Some of the academic, professional, and personal projects I’ve worked on.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="project-card" data-aos="zoom-in">
+      <h3>Enterprise Resource Management System</h3>
+      <p>Designed core modules (Auth, HR, Inventory, CRM). Built with Spring Boot + MySQL.</p>
+      <a href="https://github.com/saiganeshchunchu/ERP" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <h3>E-Care Health Management System</h3>
+      <p>A hospital management solution with patient records, appointments, and billing automation.</p>
+      <a href="https://github.com/saiganeshchunchu/E-CARE-HEALTH-MANAGEMENT-SYSTEM" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <h3>Malware Analysis & Detection</h3>
+      <p>Applied machine learning techniques to detect malicious traffic patterns in encrypted datasets.</p>
+      <a href="#" target="_blank">Project Details</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Sai Ganesh Chunchu
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
