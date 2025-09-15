@@ -14,20 +14,14 @@
       background: #f3f4f6;
       color: #222;
       line-height: 1.6;
-      scroll-behavior: smooth;
     }
-
-    /* ===== HEADER ===== */
     header {
       position: relative;
       text-align: center;
       padding: 6rem 1rem;
       background: linear-gradient(135deg, #0077ff, #00c4cc);
       color: white;
-      overflow: hidden;
     }
-
-    /* Dark overlay */
     header::after {
       content: "";
       position: absolute;
@@ -35,25 +29,11 @@
       background: rgba(0,0,0,0.35);
       z-index: 1;
     }
-
     header h1, header p, nav {
       position: relative;
       z-index: 2;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      animation: fadeDown 1s ease;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.95;
-      animation: fadeUp 1.5s ease;
-    }
-
     nav a {
       margin: 0 0.8rem;
       color: white;
@@ -62,76 +42,70 @@
       transition: color 0.3s;
     }
     nav a:hover { color: #ffeb3b; }
-
-    /* Animated background circles */
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.15);
-      animation: float 8s infinite ease-in-out;
-      z-index: 0;
-    }
-    .circle:nth-child(1){width:120px;height:120px;top:10%;left:20%;animation-duration:12s;}
-    .circle:nth-child(2){width:200px;height:200px;top:40%;left:70%;animation-duration:18s;}
-    .circle:nth-child(3){width:150px;height:150px;top:70%;left:10%;animation-duration:20s;}
-    @keyframes float {
-      0%,100%{transform:translateY(0);}
-      50%{transform:translateY(-40px);}
-    }
-
-    /* ===== SECTIONS ===== */
     section {
       max-width: 900px;
       margin: 3rem auto;
       padding: 2rem;
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    h2 {
-      font-size: 1.8rem;
-      border-left: 5px solid #0077ff;
-      padding-left: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    ul { padding-left: 1.2rem; }
-
-    /* ===== FOOTER ===== */
+    h2 { border-left: 5px solid #0077ff; padding-left: 0.5rem; }
     footer {
       text-align: center;
       padding: 2rem;
       background: linear-gradient(135deg, #0077ff, #00c4cc);
       color: #fff;
-      font-size: 0.9rem;
-    }
-
-    /* ===== Animations ===== */
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
     <h1>Sai Ganesh Chunchu</h1>
     <p>Software & Data Enthusiast | M.S. Computer Science (UAH)</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Sections remain unchanged -->
+  <section id="about">
+    <h2>About</h2>
+    <p>I am pursuing a Master’s in Computer Science at the University of Alabama in Huntsville (specialization: Data Science). Passionate about AI/ML, cloud computing, and building impactful software solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>University of Alabama in Huntsville</strong> — M.S. Computer Science (Expected Dec 2025)</p>
+    <p><strong>Koneru Lakshmaiah Education Foundation</strong> — B.Tech CSE (May 2023)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Python, JavaScript, C#, SQL Server, MongoDB, HTML, CSS, XML, AWS, RPA Tools</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Enterprise Resource Management System</li>
+      <li>E-Care Health Management System</li>
+      <li>Malware Analysis & Detection (ML models)</li>
+    </ul>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Azure Fundamentals (AZ-900)</li>
+      <li>Aviatrix Certified Engineer</li>
+      <li>Microsoft DevOps Solutions (AZ-400)</li>
+      <li>Automation Anywhere RPA Professional</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Sai Ganesh Chunchu
+  </footer>
 </body>
 </html>
